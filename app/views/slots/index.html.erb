@@ -1,4 +1,5 @@
 <div id='app'></div>
-
-<script type="text/javascript">
-</script>
+<% @slots.each do|slot| %>
+  <%= slot.title %>
+  <br />
+<%end%>
