@@ -1,4 +1,16 @@
 Timeslotter::Application.routes.draw do
+  get "slots/index"
+
+  get "slots/new"
+
+  get "slots/create"
+
+  get "slots/edit"
+
+  get "slots/update"
+
+  get "slots/destroy"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
