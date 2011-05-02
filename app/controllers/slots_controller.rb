@@ -13,10 +13,9 @@ class SlotsController < ApplicationController
     render :json => @slot.to_json
   end
 
-  def new
-  end
-
   def create
+    @slot = Slot.create!(:title => params[:title])
+    render :json => {:status => 'success'}
   end
 
   def edit
