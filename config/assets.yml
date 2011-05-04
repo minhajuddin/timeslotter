@@ -1,0 +1,14 @@
+#embed_assets: on
+package_assets: always
+compress_assets: off
+#template_extension: html.mustache
+
+javascripts:
+  app:
+    - app/assets/javascripts/jquery.js
+    - app/assets/javascripts/jquery-ui.js
+    - app/assets/javascripts/rails.js
+    - app/assets/javascripts/underscore.js
+    - app/assets/javascripts/backbone.js
+    - tmp/coffeescripts/boot.js
+    - tmp/coffeescripts/*.js

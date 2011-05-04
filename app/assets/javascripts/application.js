@@ -66,7 +66,11 @@ window.App.init = function() {
   App.Controllers.Slots = Backbone.Controller.extend({
     routes: {
       "": "index",
-      "new": "newSlot"
+      "new": "newSlot",
+      "slot/:id": "show"
+    },
+    initialize: function() {
+      this.options = this.options.collection;
     },
     index: function() {
       var slots = new App.Collections.Slots;
@@ -84,6 +88,10 @@ window.App.init = function() {
       new App.Views.Slots.NewView({
         model: slot
       });
+    },
+    show: function(id) {
+      debugger;
+      console.dir(this.options.collection.get(id));
     }
   });
 
