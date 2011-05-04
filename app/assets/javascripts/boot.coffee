@@ -5,5 +5,5 @@ window.App =
   Views:
     Slots: {}
   init: ->
-    # new App.Controllers.SlotsController
+    new App.Controllers.SlotsController
     Backbone.history.start()
