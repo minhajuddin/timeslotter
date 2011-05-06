@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Timeslotter</title>
-  <%= stylesheet_link_tag :all %>
-  <%= include_javascripts :app %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+  <head>
+    <title>Timeslotter</title>
+    <%= stylesheet_link_tag :all %>
+    <%= include_javascripts :app %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
 
-<%= yield %>
+    <div id="header">
+      <div class="container">
+        <div id="logo">
+          <h1>Timeslotter</h1>
+        </div>
+      </div>
+    </div>
 
-</body>
+    <div id="main">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        Timeslotter 
+        <a href="https://github.com/minhajuddin/timeslotter">source on github</a>
+      </div>
+    </div>
+
+  </body>
 </html>

@@ -1,0 +1,190 @@
+/*@import "compass/reset";
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+/* line 17, ../../../app/stylesheets/lib/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+ins {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+body {
+  background: none repeat scroll 0 0 #FFFFFF;
+  color: #555555;
+  direction: ltr;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  unicode-bidi: embed;
+}
+
+h1 {
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+h3 {
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h4 {
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+}
+
+a, a:visited {
+  cursor: pointer;
+  color: #0062C4;
+  -moz-outline-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+select {
+  border: 1px solid #bdc7d8;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  padding: 2px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  padding-top: 10px;
+}
+body {
+  background-color: #282828;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 0px 40px;
+}
+#header {
+  -webkit-box-shadow: #558a21 -2px 1px 2px;
+  background-color: #282828;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #333333), color-stop(100%, #1a1a1a));
+  background-image: -moz-linear-gradient(top, #333333 0%, #1a1a1a 100%);
+  background-image: linear-gradient(top, #333333 0%, #1a1a1a 100%);
+  border-bottom: 3px solid #4BC1DE;
+  height: 45px;
+}
+#header #logo {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;
+}
+#header #logo h1 {
+  color: #fff;
+  font-size: 26px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#main {
+  background-color: #E9E9E9;
+  min-height: 700px;
+}
+
+#footer {
+  background-color: #282828;
+  padding: 20px 0px;
+  color: #fff;
+}
