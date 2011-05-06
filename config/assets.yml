@@ -1,17 +1,17 @@
 #embed_assets: on
 package_assets: always
 compress_assets: off
-template_extension: jst
-template_function: "_.template"
-#template_extension: html.mustache
+template_extension: html.mustache
+template_function: "Mustache.template"
 
 javascripts:
   app:
     - app/assets/javascripts/jquery.js
     - app/assets/javascripts/jquery-ui.js
+    - app/assets/javascripts/jquery.mustache.js
     - app/assets/javascripts/rails.js
     - app/assets/javascripts/underscore.js
     - app/assets/javascripts/backbone.js
     - tmp/coffeescripts/boot.js
     - tmp/coffeescripts/*.js
-    - app/assets/javascripts/*.jst
+    - app/assets/javascripts/*.html.mustache
