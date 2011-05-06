@@ -1,6 +1,8 @@
 #embed_assets: on
 package_assets: always
 compress_assets: off
+template_extension: jst
+template_function: "_.template"
 #template_extension: html.mustache
 
 javascripts:
@@ -12,3 +14,4 @@ javascripts:
     - app/assets/javascripts/backbone.js
     - tmp/coffeescripts/boot.js
     - tmp/coffeescripts/*.js
+    - app/assets/javascripts/*.jst

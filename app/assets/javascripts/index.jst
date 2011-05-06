@@ -1,0 +1,12 @@
+<% if(collection.models.length > 0) { %>
+  <h3><a href='#new'>Create New</a></h3>
+  <table>
+  <% collection.each(function(slot) { %> 
+    <tr>  
+      <td><a href='#slot/<%= slot.id %>'><%= slot.escape('title') %></a></td>
+    </tr>
+  <% }); %> 
+  </table>
+<% } else { %> 
+  <h3>No slots! <a href='#new'>Create one</a></h3>
+<% } %>
