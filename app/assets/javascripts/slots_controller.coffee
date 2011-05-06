@@ -1,8 +1,9 @@
 class App.Controllers.SlotsController extends Backbone.Controller
   routes:
     "":"index"
+  initialize: (slots) ->
+    @slots = new App.Collections.Slots()
+    @slots.refresh(slots)
   index: ->
-    slots = new App.Collections.Slots
-    slots.fetch
-      success: ->
-        new App.Views.Slots.Index(collection:slots)
+    @view = new App.Views.Slots.Index(slots: @slots)
+    @view.render

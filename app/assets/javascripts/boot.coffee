@@ -4,6 +4,6 @@ window.App =
   Models: {},
   Views:
     Slots: {}
-  init: ->
-    new App.Controllers.SlotsController
+  init: (slots) ->
+    window.controller = new App.Controllers.SlotsController(slots)
     Backbone.history.start()

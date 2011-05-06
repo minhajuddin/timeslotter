@@ -1,1 +1,6 @@
-<div id='app'></div>
+<div id='slots'></div>
+<script type="text/javascript">
+  $(function(){
+      App.init(<%= raw @slots.to_json%>)
+  });
+</script>
