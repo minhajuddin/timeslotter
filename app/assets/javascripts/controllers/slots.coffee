@@ -1,7 +1,7 @@
 class App.Controllers.SlotsController extends Backbone.Controller
   routes:
     "":"index"
-    "/new":"addNew"
+    "!/new":"addNew"
   initialize: (slots) ->
     @slots = new App.Collections.Slots()
     @slots.refresh(slots)
