@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+Slot.create!(:title => "Finish timeslotter!")
+Slot.create!(:title => "Clean up timeslotter's UI")
